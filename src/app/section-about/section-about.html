@@ -1,0 +1,72 @@
+<section>
+    <article id="tech-skills">
+        <div>
+            <h2>Trabajo con...</h2>
+            <p>
+                Desarrollo aplicaciones full-stack.
+                Trabajo con Python y Javascript, tanto en páginas estáticas como
+                en frameworks modernos.
+            </p>
+        </div>
+        <div id="tech-icons">
+            <app-appearing>
+            <app-icon name="python" [size]="70" id="icon-python"></app-icon>
+            </app-appearing>
+            <app-appearing>
+                <app-icon name="javascript" [size]="70" id="icon-javascript"></app-icon>
+            </app-appearing>
+            <app-appearing>
+                <app-icon name="angular" [size]="70" id="icon-angular"></app-icon>
+            </app-appearing>
+            <app-appearing>
+                <app-icon name="svelte" [size]="70" id="icon-svelte"></app-icon>
+            </app-appearing>
+        </div>
+    </article>
+    <article id="contact-info">
+        <h2 id="find-me">Encuéntrame</h2>
+        <app-appearing class="contact-item">
+            <span>
+                <app-icon name="github" [size]="32" id="icon-github"></app-icon>
+                <a href="https://www.github.com/adanielpincab">@adanielpincab</a> 
+            </span>
+        </app-appearing>
+        <app-appearing class="contact-item">
+            <span>
+                <app-icon name="linkedin" [size]="32" id="icon-linkedin"></app-icon>
+                <a href="https://www.linkedin.com/in/adanielpincab">/in/adanielpincab</a> 
+            </span>
+        </app-appearing>
+    </article>
+    <article id="portfolio">
+        <h2>Proyectos</h2>
+        <div id="portfolio-list">
+            <app-appearing>
+                <a href="https://open.spotify.com/show/0a10PE2Uh82D971JwfCKEt?si=5568b23234164f46" target="_blank">
+                    <div class="portfolio-item">
+                        <div>
+                            <h3>SixPanda™ podcast</h3>
+                            <p>
+                                Podcast sobre tecnología, ciencia y cultura pop.
+                            </p>
+                        </div>
+                        <app-icon name="6panda" [size]="64" id="icon-6panda"></app-icon>
+                    </div>
+                </a>
+            </app-appearing>
+            <app-appearing>
+                <a href="https://www.adanielpincab.es/flamingo" target="_blank">
+                    <div class="portfolio-item">
+                        <div>
+                            <h3>Flamingo</h3>
+                            <p>
+                                Minijuego diario.
+                            </p>
+                        </div>
+                        <app-icon name="web" [size]="64" id="icon-web"></app-icon>
+                    </div>
+                </a>
+            </app-appearing>
+        </div>
+    </article>
+</section>

@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+    color: var(--antiflash-white-dimmed);
+}

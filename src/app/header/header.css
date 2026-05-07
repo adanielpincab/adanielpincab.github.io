@@ -1,0 +1,77 @@
+header {
+    font-family: 'Ubuntu Mono';
+    font-size: 2em;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 99%;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    font-size: 0.6em;
+    align-items: center;
+    gap: 8px;
+}
+
+header nav a {
+    z-index: 1;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    cursor: pointer;
+    text-decoration: underline var(--bleu-de-france);
+    text-decoration-thickness: 3px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#logo .symbol {
+    font-family: 'Bytesized';
+    font-size: 3rem;
+}
+
+#logo .name {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+    opacity: 0.5;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    #logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    #logo .name {
+        text-align: right;
+    }
+    
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+    }
+}

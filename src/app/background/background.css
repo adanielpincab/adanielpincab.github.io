@@ -5,6 +5,7 @@
     height: 100vh;
     width: 100vw;
     pointer-events: auto;
+    touch-action: pan-x pan-y;
 
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
     mask-image:

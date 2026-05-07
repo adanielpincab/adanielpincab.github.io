@@ -172,6 +172,9 @@ export class Background {
     });
     this.app.ticker.maxFPS = 60;
     this.pixiContainer.nativeElement.appendChild(this.app.canvas);
+    
+    // Permitir scroll táctil en móviles
+    (this.app.canvas as HTMLCanvasElement).style.touchAction = 'pan-x pan-y';
 
     // Contenedor para el Game of Life
     this.filteredContainer = new PIXI.Container();
